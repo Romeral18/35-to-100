@@ -1,0 +1,42 @@
+.nav {
+  grid-area: n;
+  background-color: #b2887a;
+  padding: 20px;
+
+}
+.list{
+
+}
+
+.friendItem{
+
+}
+.friendsAvatar{
+
+}
+.friendsName{
+
+}
+.friendsList{
+
+}
+.listName{
+
+}
+
+.item {
+  & > a {
+    color: saddlebrown;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  & > a:hover {
+    color: #d7e1db;
+  }
+
+  & > a:focus {
+    color: #fcc799;
+  }
+
+}
