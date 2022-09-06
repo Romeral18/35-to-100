@@ -11,7 +11,7 @@ const Profile = (props) => {
     <div>
       <BackgroundPhoto />
       <Cap />
-      <MyPosts posts={props.posts} addPost={props.addPost} updateNewPostText={props.updateNewPostText} newPostText={props.newPostText} />
+      <MyPosts posts={props.posts} store={props.store} newPostText={props.newPostText} />
     </div>
   );
 };

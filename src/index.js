@@ -7,12 +7,12 @@ import {subscribe} from './redux/state';
 import state from './redux/state'
 import store from './redux/store'
 
-let rerenderEntireTree = (state) => {
+let rerenderEntireTree = (state, store) => {
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
         <React.StrictMode>
             <BrowserRouter>
-                <App state={state} store = {store} />
+                <App state={state} store ={store} />
             </BrowserRouter>
         </React.StrictMode>
     );
