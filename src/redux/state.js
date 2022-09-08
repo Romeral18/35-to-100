@@ -1,4 +1,8 @@
-let store = {
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+
+
+const store = {
     
     _state : {
         staticPages: {links: [
@@ -62,16 +66,9 @@ let store = {
     
 };
 
-export const addPostActionCreator = () => {
-    return {
-        type: 'ADD-POST'
-    }
-  };
-export const updateNewPostTextActionCreator = (text) => {
-    return {
-        type: 'UPDATE-NEW-POST-TEXT', newText: text
-    }
-  };
+export const addPostActionCreator = () => ({type: ADD_POST});
+export const updateNewPostTextActionCreator = (text) => 
+    ({type: UPDATE_NEW_POST_TEXT, newText: text});
 
 
 export default store;
