@@ -1,5 +1,7 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+// const SEND_MESSAGE = 'SEND-MESSAGE';
+// const UPDATE_NEW_MESSAGE_BODY = ' UPDATE-NEW-MESSAGE-BODY'
 
 
 const store = {
@@ -59,7 +61,10 @@ const store = {
         } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
-        };
+        } else if (action.type === 'SEND-MESSAGE') {
+            this._state.dialogsPage.newMessageBody = action.body;
+            this._callSubscriber(this._state);
+        }
 
 
     }
