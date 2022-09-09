@@ -1,7 +1,7 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-// const SEND_MESSAGE = 'SEND-MESSAGE';
-// const UPDATE_NEW_MESSAGE_BODY = ' UPDATE-NEW-MESSAGE-BODY'
+const SEND_MESSAGE = 'SEND-MESSAGE';
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY'
 
 
 const store = {
@@ -74,6 +74,8 @@ const store = {
 export const addPostActionCreator = () => ({type: ADD_POST});
 export const updateNewPostTextActionCreator = (text) => 
     ({type: UPDATE_NEW_POST_TEXT, newText: text});
+export const sendMessageCreator = () => ({type: SEND_MESSAGE});
+export const updateNewMessageBodyCreator = () => ({type: UPDATE_NEW_MESSAGE_BODY});
 
 
 export default store;
