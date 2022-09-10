@@ -36,7 +36,9 @@ const store = {
             {id: 2, message: 'How are you?'},
             {id: 3, message: 'I am nice!'},
                 {id: 4, message: 'Updating...'}
-        ]}
+        ],
+            newMessageBody: ""
+        }
     },
     _callSubscriber() {
         console.log('state was changed')
@@ -65,7 +67,7 @@ const store = {
         } else if (action.type === 'SEND-MESSAGE') {
             let body = this._state.dialogsPage.newMessageBody;
             this._state.dialogsPage.newMessageBody = '';
-            this._state.dialogsPage.messages.push({id: 4, message: 'Updating...'});
+            this._state.dialogsPage.messages.push({id: 4, message: body});
             this._callSubscriber(this._state);
         } else if (action.type === 'UPDATE-NEW-MESSAGE-BODY') {
             this._state.dialogsPage.newMessageBody = action.body;
