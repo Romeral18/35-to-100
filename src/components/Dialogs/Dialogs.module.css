@@ -3,38 +3,6 @@
   display: grid;
   -ms-grid-columns: 2fr 10fr;
   grid-template-columns: 2fr 10fr;
-  -ms-grid-rows: 50%, 25%, 25%;
-  grid-template-rows: 50%, 25%, 25%;
-}.dialogs > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}.dialogs > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}.dialogs > *:nth-child(3) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}.dialogs > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}.dialogs > *:nth-child(5) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}.dialogs > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-}.dialogs > *:nth-child(7) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-}.dialogs > *:nth-child(8) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-}.dialogs > *:nth-child(9) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-}.dialogs > *:nth-child(10) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
 }
 
 .dialogsItems {
@@ -47,8 +15,4 @@
 
 .messages {
   padding: 10px;
-}
-
-.sendMessageButton {
-  margin: 0px, 20px, 20px 0px;
 }
