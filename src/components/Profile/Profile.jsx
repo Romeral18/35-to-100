@@ -1,8 +1,9 @@
 import React from 'react'
 import './Profile.module.scss'
-import MyPosts from './MyPosts/MyPosts'
+import MyPosts from './MyPosts/MyPostsContainer'
 import BackgroundPhoto from './BackgroundPhoto/BackgroundPhoto'
 import Cap from './Cap/Cap'
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
 
 
@@ -11,7 +12,7 @@ const Profile = (props) => {
     <div>
       <BackgroundPhoto />
       <Cap />
-      <MyPosts posts={props.posts} dispatch={props.dispatch} newPostText={props.newPostText} />
+      <MyPostsContainer store={props.store} posts={props.posts}  newPostText={props.newPostText} />
     </div>
   );
 };
