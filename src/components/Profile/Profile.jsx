@@ -9,10 +9,11 @@ import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
 const Profile = (props) => {
   return (
+
     <div>
       <BackgroundPhoto />
       <Cap />
-      <MyPostsContainer store={props.store} posts={props.posts}  newPostText={props.newPostText} />
+      <MyPostsContainer  />
     </div>
   );
 };

@@ -13,11 +13,12 @@ const MyPosts = (props) => {
         props.posts.map( p => (<Posts message={p.message} likes={p.likes} />));
 
     const newPostElement = React.createRef();
+
     const onAddPost = () => {
          props.addPost();
     };
     const onPostChange = () => {
-        const text = props.newPostElement.current.value;
+        const text = newPostElement.current.value;
         props.updateNewPostText(text);
 
     }
