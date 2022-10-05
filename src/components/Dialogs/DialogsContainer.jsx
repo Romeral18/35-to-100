@@ -4,7 +4,7 @@ import DialogsItem from './DialogsItem/DialogItem'
 import Messages from './Messages/Messages'
 import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialogs-reducer";
 import Dialogs from "./Dialogs";
-import StoreContext from "../../Context";
+import {StoreContext} from "../../Context";
 
 
 
@@ -25,6 +25,7 @@ const DialogsContainer = (props) => {
                 let body = e.target.value;
                 store.dispatch(updateNewMessageBodyCreator(body))
             }
+            debugger;
         return <Dialogs dialogs={dialogs}
                     messages={messages}
                     sendMessage ={onSendMessageClick}
