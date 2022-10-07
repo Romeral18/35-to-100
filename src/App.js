@@ -6,6 +6,7 @@ import {Route, Routes} from 'react-router-dom';
 import Settings from './components/Settings/Settings'
 import News from './components/News/News'
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import NavbarContainer from "./components/Navbar/NavbarContainer";
 
 
 
@@ -21,7 +22,7 @@ debugger;
     return (
         <div className="app-wrapper">
             <Header/>
-            <Navbar/>
+            <NavbarContainer/>
             <div className="app-wrapper-content">
                 <Routes>
                     <Route path='/profile' element={<Profile />}/>
